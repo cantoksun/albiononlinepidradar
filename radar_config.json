@@ -1,0 +1,314 @@
+{
+  "ayarlar": {
+    "ornekleme_hizi": 16000,
+    "pencere_suresi_sn": 1.2,
+    "adim_suresi_sn": 0.08,
+    "tekrar_uyari_bekleme_sn": 1.4,
+    "albion_ses_esigi": 0.0003,
+    "hareket_susturma_suresi_sn": 1.3,
+    "discord_izolasyonu_aktif": true,
+    "hareket_susturma_aktif": true,
+    "kulaklik_bip_aktif": true,
+    "ekran_flasi_aktif": false,
+    "hud_aktif": true,
+    "hud_x": 1603,
+    "hud_y": 694
+  },
+  "izlenecek_sesler": [
+    {
+      "id": "kosan_oyuncu_adim",
+      "etiket": "koşan kişi (ayak sesleri)",
+      "aktif": true,
+      "tur": "ritmik_adim",
+      "frekans_araligi_hz": [
+        350,
+        2400
+      ],
+      "darbe_araligi_ms": [
+        220,
+        480
+      ],
+      "min_darbe_sayisi": 3,
+      "spektral_odak": "step",
+      "hassasiyet": 42,
+      "aciklama": "yaklaşan düşman oyuncu ayak sesleri ve bot koşu darbeleri"
+    },
+    {
+      "id": "binek_toynak",
+      "etiket": "koşan at / binek (toynak)",
+      "aktif": true,
+      "tur": "ritmik_adim",
+      "frekans_araligi_hz": [
+        250,
+        4000
+      ],
+      "darbe_araligi_ms": [
+        70,
+        240
+      ],
+      "min_darbe_sayisi": 3,
+      "spektral_odak": "high",
+      "hassasiyet": 40,
+      "aciklama": "at, zırhlı at, geyik, koç, domuz toynak sesleri"
+    },
+    {
+      "id": "binek_pati",
+      "etiket": "koşan kurt / puma (pati)",
+      "aktif": true,
+      "tur": "ritmik_adim",
+      "frekans_araligi_hz": [
+        400,
+        1800
+      ],
+      "darbe_araligi_ms": [
+        80,
+        260
+      ],
+      "min_darbe_sayisi": 3,
+      "spektral_odak": "mid",
+      "hassasiyet": 40,
+      "aciklama": "kurt, direwolf, leopar, tilki yumuşak adım sesleri"
+    },
+    {
+      "id": "binek_agir",
+      "etiket": "ağır binek (ayı / öküz / mamut)",
+      "aktif": true,
+      "tur": "ritmik_adim",
+      "frekans_araligi_hz": [
+        40,
+        300
+      ],
+      "darbe_araligi_ms": [
+        120,
+        420
+      ],
+      "min_darbe_sayisi": 3,
+      "spektral_odak": "bass",
+      "hassasiyet": 45,
+      "aciklama": "ayı, direbear, mamut, öküz ağır yer vuruntuları"
+    },
+    {
+      "id": "gorunmezlik",
+      "etiket": "görünmezlik / pusu",
+      "aktif": true,
+      "tur": "sablon",
+      "sablon_dosyasi": "invisibility.wav",
+      "hassasiyet": 35,
+      "aciklama": "assassin jacket, invis potion, undead cape"
+    },
+    {
+      "id": "ani_atilma",
+      "etiket": "ani atılma (dash / charge)",
+      "aktif": true,
+      "tur": "sablon",
+      "sablon_dosyasi": "dash.wav",
+      "hassasiyet": 35,
+      "aciklama": "hançer, kılıç hızlı fırlama ve hücum yetenekleri"
+    },
+    {
+      "id": "kanca_cekme",
+      "etiket": "kanca / çekme (chain / pull)",
+      "aktif": true,
+      "tur": "sablon",
+      "sablon_dosyasi": "chain.wav",
+      "hassasiyet": 35,
+      "aciklama": "demon hook, harpoon, zincir çekme yetenekleri"
+    },
+    {
+      "id": "fire_staff",
+      "etiket": "ateş asası (fire staff)",
+      "aktif": true,
+      "tur": "frekans_patlamasi",
+      "frekans_araligi_hz": [
+        2200,
+        6500
+      ],
+      "min_oran": 0.4,
+      "hassasiyet": 50,
+      "aciklama": "pyromancer, fireball, dawnsong alev patlamaları"
+    },
+    {
+      "id": "frost_staff",
+      "etiket": "buz asası (frost staff)",
+      "aktif": true,
+      "tur": "frekans_patlamasi",
+      "frekans_araligi_hz": [
+        3000,
+        7500
+      ],
+      "min_oran": 0.48,
+      "hassasiyet": 50,
+      "aciklama": "permafrost, icestorm buz kristali çınlaması"
+    },
+    {
+      "id": "cursed_staff",
+      "etiket": "lanet asası (cursed staff)",
+      "aktif": true,
+      "tur": "frekans_patlamasi",
+      "frekans_araligi_hz": [
+        30,
+        280
+      ],
+      "min_oran": 0.45,
+      "hassasiyet": 50,
+      "aciklama": "shadowcaller, demonic beam derin lanet uğultusu"
+    },
+    {
+      "id": "holy_staff",
+      "etiket": "kutsal şifa asası (holy staff)",
+      "aktif": true,
+      "tur": "frekans_patlamasi",
+      "frekans_araligi_hz": [
+        900,
+        2200
+      ],
+      "min_oran": 0.45,
+      "hassasiyet": 50,
+      "aciklama": "holy beam, salvation kutsal ışık ve çan tınısı"
+    },
+    {
+      "id": "nature_staff",
+      "etiket": "doğa asası (nature staff)",
+      "aktif": true,
+      "tur": "frekans_patlamasi",
+      "frekans_araligi_hz": [
+        1200,
+        3200
+      ],
+      "min_oran": 0.44,
+      "hassasiyet": 50,
+      "aciklama": "thorns, circle of life diken ve doğa büyüsü"
+    },
+    {
+      "id": "arcane_staff",
+      "etiket": "gizemli asa (arcane staff)",
+      "aktif": true,
+      "tur": "frekans_patlamasi",
+      "frekans_araligi_hz": [
+        600,
+        2600
+      ],
+      "min_oran": 0.42,
+      "hassasiyet": 50,
+      "aciklama": "time corridor, arcane beam, cleanse büyü dalgası"
+    },
+    {
+      "id": "quarterstaff",
+      "etiket": "quarterstaff (çift ağızlı asa)",
+      "aktif": true,
+      "tur": "ani_darbe",
+      "frekans_araligi_hz": [
+        280,
+        850
+      ],
+      "min_oran": 0.48,
+      "max_yuksek_frekans_orani": 0.15,
+      "hassasiyet": 50,
+      "aciklama": "cartwheel, concussive blow tahta savurma ve dönme sesi"
+    },
+    {
+      "id": "kilic_sword",
+      "etiket": "kılıç (sword / claymore / dual)",
+      "aktif": true,
+      "tur": "ani_darbe",
+      "frekans_araligi_hz": [
+        900,
+        2600
+      ],
+      "min_oran": 0.42,
+      "hassasiyet": 52,
+      "aciklama": "keskin çelik savurması, iron will, heroic strike"
+    },
+    {
+      "id": "balta_axe",
+      "etiket": "balta (axe / halberd / scythe)",
+      "aktif": true,
+      "tur": "ani_darbe",
+      "frekans_araligi_hz": [
+        450,
+        1400
+      ],
+      "min_oran": 0.44,
+      "hassasiyet": 52,
+      "aciklama": "rending spin, ağır balta yarığı ve savrulma darbesi"
+    },
+    {
+      "id": "hancer_dagger",
+      "etiket": "hançer (dagger / assassin / bloodletter)",
+      "aktif": true,
+      "tur": "ani_darbe",
+      "frekans_araligi_hz": [
+        1400,
+        3800
+      ],
+      "min_oran": 0.45,
+      "hassasiyet": 50,
+      "aciklama": "hızlı saplama, execute, sunder armor kesik sesi"
+    },
+    {
+      "id": "mace_hammer",
+      "etiket": "topuz & çekiç (mace / hammer)",
+      "aktif": true,
+      "tur": "ani_darbe",
+      "frekans_araligi_hz": [
+        550,
+        1600
+      ],
+      "min_oran": 0.42,
+      "hassasiyet": 55,
+      "aciklama": "ağır zırh darbesi, snare charge, guard breaker"
+    },
+    {
+      "id": "mizrak_spear",
+      "etiket": "mızrak (spear / pike / glaive)",
+      "aktif": true,
+      "tur": "ani_darbe",
+      "frekans_araligi_hz": [
+        500,
+        1900
+      ],
+      "min_oran": 0.43,
+      "hassasiyet": 52,
+      "aciklama": "uzun deşme, impale, cripple mızrak vuruşları"
+    },
+    {
+      "id": "yay_ok_bow",
+      "etiket": "ok & tatar yayı (bow / crossbow)",
+      "aktif": true,
+      "tur": "frekans_patlamasi",
+      "frekans_araligi_hz": [
+        1800,
+        4800
+      ],
+      "min_oran": 0.44,
+      "hassasiyet": 50,
+      "aciklama": "gerilen yay kirişi fırlaması, poison arrow, snipe shot"
+    },
+    {
+      "id": "sert_cc",
+      "etiket": "sersemletme / stun / root",
+      "aktif": true,
+      "tur": "ani_darbe",
+      "frekans_araligi_hz": [
+        40,
+        220
+      ],
+      "min_oran": 0.6,
+      "hassasiyet": 50,
+      "aciklama": "şok dalgası, rooting smash, stun run sersemletme etkisi"
+    },
+    {
+      "id": "ayakkabi_sprint",
+      "etiket": "hızlı koşu / sprint (wanderlust / boots)",
+      "aktif": true,
+      "tur": "frekans_patlamasi",
+      "frekans_araligi_hz": [
+        1100,
+        3400
+      ],
+      "min_oran": 0.42,
+      "hassasiyet": 48,
+      "aciklama": "wanderlust, soldier boots, rüzgar hızı sprint koşu sesi"
+    }
+  ]
+}
