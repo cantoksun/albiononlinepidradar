@@ -1,1 +1,35 @@
 # albiononlinepidradar
+
+=========================================
+
+bu guncellemede iki temel sorun oyun dosyalarindan derinlemesine cozulmustur:
+
+1. kosan atlarin (bineklerin) algilanmasi:
+------------------------------------------
+- daha onceki varsayim at nalinin bas (100-300 hz) oldugu yonundeydi.
+- oyun arsivi (LooseMedia17.pck) taranarak wem 20517569 (play_mount_move) cikarilmis 
+  ve gercek spektrum analizi yapilmistir.
+- at nal sesinin enerjisinin %92.3'u 250 - 4000 hz araliginda tas/toprak tikirtisi 
+  ve yuksek frekansli toynak vurusudur.
+- cikarilan 'gallop.wav' artik 4. ozel sablon olarak capraz korelasyona dahil edilmis,
+  ayrica ritmik vurus dedektoru 300 - 3200 hz araligina genisletilmistir.
+  artik yakinindan kosan veya dortnala gecen her binek aninda yakalanir.
+
+2. asa (staff) turlerinin kesin ayristirilmasi:
+----------------------------------------------
+- oyunda 'staff' adi altinda cok farkli siniflar bulunur. genel mace/darbe etiketi kaldirilmis,
+  oyun ici buyu ve dovus veritabanina gore su kategorilere ayrilmistir:
+  * quarterstaff / cift agizli asa (cartwheel, concussive, staff vault) -> 350-800 hz donme/ruzgar
+  * fire staff / ates asasi (pyro, dawnsong, fireball) -> 2200-7000 hz alev citirtisi ve patlama
+  * frost staff / buz asasi (permafrost, icestorm) -> >2500 hz keskin buz isligi
+  * holy / nature staff (sifa ve doga) -> orta-yuksek cinlama
+  * cursed staff / lanet asasi (shadowcaller, cursed dot) -> karanlik vizilti
+
+3. ekran ustu hud paneli:
+-------------------------
+- seffaf, sadece beyaz yazi ve vektor oklardan olusan gosterge.
+- son 3 ses ekranda yer alir, fareyle istenilen yere suruklenebilir.
+
+calistirma:
+-----------
+'baslat.bat' dosyasina cift tiklamaniz yeterlidir.
